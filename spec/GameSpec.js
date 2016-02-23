@@ -31,6 +31,27 @@ describe("Game", function(){
       expect(game.computerWeapon).toEqual('scissors');
     });
 
+  });
+
+  describe('Play game', function(){
+
+    it("returns 'p1 wins!' if p1 beats computer", function(){
+      game.p1SelectWeapon('rock');
+      spyOn(game, 'computerSelectWeapon').and.returnValue(game.computerWeapon = 'scissors');
+      expect(game.playGame()).toEqual('p1 wins!')
+    });
+
+    it("returns 'computer wins!' if computer beats p1", function(){
+      game.p1SelectWeapon('rock');
+      spyOn(game, 'computerSelectWeapon').and.returnValue(game.computerWeapon = 'paper');
+      expect(game.playGame()).toEqual('computer wins!')
+    });
+
+    it("returns 'it's a draw!' if computer and p1 select the same weapon", function(){
+      game.p1SelectWeapon('paper');
+      spyOn(game, 'computerSelectWeapon').and.returnValue(game.computerWeapon = 'paper');
+      expect(game.playGame()).toEqual('it\'s a draw!')
+    });
 
   });
 
