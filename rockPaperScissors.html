@@ -2,13 +2,35 @@
 <html>
 
   <head>
-    <title>Takeaway</title>
+    <title>Rock Paper Scissors</title>
+    <script src="src/Game.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <!-- <link rel="stylesheet" type="text/css" href="public/home.css"> -->
   </head>
 
   <body>
     <h1>ROCK PAPER SCISSORS</h2>
+      <form>
+        Name:<br>
+        <input type="text" name="name" id="p1Name">
+        <input type="submit" value="Submit">
+      </form>
+
+      <br>
+      <form>
+        Select weapon:<br>
+        <input type="radio" name="weapon" id="p1Weapon" value="rock">Rock<br>
+        <input type="radio" name="weapon" id="p1Weapon" value="paper">Paper<br>
+        <input type="radio" name="weapon" id="p1Weapon" value="scissors">Scissors<br>
+        <input type="submit" value="Submit">
+      </form>
+      <br>
+      <button type="button">Play now</button>
+      <br>
+      <br>
+      You chose: <id="p1Weapon"><br>
+      The computer chose: <id="computerWeapon">
+      <id="playGame">
   </body>
 
 </html>
