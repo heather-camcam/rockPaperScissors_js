@@ -8,6 +8,11 @@ describe("Game", function(){
 
   describe('Player 1', function(){
 
+    it("sets p1 username", function(){
+      game.setP1Name('Heather');
+      expect(game.p1Name).toEqual('Heather');
+    });
+
     it("allows p1 to select a weapon of choice", function(){
       game.p1SelectWeapon('rock');
       expect(game.p1Weapon).toEqual('rock');

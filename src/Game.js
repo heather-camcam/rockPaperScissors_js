@@ -1,8 +1,13 @@
 function Game() {
+  this.p1Name = null;
   this.p1Weapon = null;
   this.computerWeapon = null;
   this.weaponChoices = ['rock', 'paper', 'scissors'];
 }
+
+  Game.prototype.setP1Name = function(name){
+    this.p1Name = name;
+  };
 
   Game.prototype.p1SelectWeapon = function(weapon){
     if (this.weaponChoices.indexOf(weapon) > -1){
