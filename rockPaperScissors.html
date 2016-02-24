@@ -5,7 +5,7 @@
     <title>Rock Paper Scissors</title>
     <script src="src/Game.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="public/home.css"> -->
+    <script src="js/interface.js"></script>
   </head>
 
   <body>
@@ -16,9 +16,9 @@
         <input type="submit" value="Submit"></input>
       </form>
       <br>
-        <h3 id="Name"></h3>
+        <h3> p1: <span id="Name"></span> </h3>
       <br>
-      <form>
+      <form id="selectWeapon">
         Select weapon:<br>
         <input type="radio" name="weapon" id="p1Weapon" value="rock">Rock<br></input>
         <input type="radio" name="weapon" id="p1Weapon" value="paper">Paper<br></input>
@@ -29,7 +29,7 @@
       <button type="button">Play now</button>
       <br>
       <br>
-      You chose: <id="p1Weapon"><br>
+      You chose: <span id="p1WeaponChoice"></span><br>
       The computer chose: <id="computerWeapon">
       <id="playGame">
   </body>

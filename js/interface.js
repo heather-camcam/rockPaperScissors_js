@@ -9,4 +9,13 @@ $(document).ready(function() {
     $('#Name').text(game.p1Name);
   });
 
+  $('#selectWeapon').submit(function(event){
+    event.preventDefault();
+    var weapon = $('#p1Weapon').val();
+    game.p1SelectWeapon(weapon);
+    $('#p1WeaponChoice').text(game.p1Weapon);
+  });
+
+
+
 });
