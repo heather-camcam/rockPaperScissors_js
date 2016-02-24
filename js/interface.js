@@ -19,6 +19,8 @@ $(document).ready(function() {
   $('#play').click(function() {
     game.computerSelectWeapon();
     $('#computerChoice').text(game.computerWeapon);
+    game.playGame();
+    $('#playGame').text(game.playGame());
   });
 
 });
