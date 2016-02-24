@@ -16,6 +16,9 @@ $(document).ready(function() {
     $('#p1WeaponChoice').text(game.p1Weapon);
   });
 
-
+  $('#play').click(function() {
+    game.computerSelectWeapon();
+    $('#computerChoice').text(game.computerWeapon);
+  });
 
 });
