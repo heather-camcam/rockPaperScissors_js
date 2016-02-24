@@ -11,7 +11,7 @@ $(document).ready(function() {
 
   $('#selectWeapon').submit(function(event){
     event.preventDefault();
-    var weapon = $('#p1Weapon').val();
+    var weapon = $("#p1Weapon[name=weapon]:checked").val();
     game.p1SelectWeapon(weapon);
     $('#p1WeaponChoice').text(game.p1Weapon);
   });
