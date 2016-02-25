@@ -1,8 +1,63 @@
-#jumbotron {
-    /*background-color: #00b3b3;
-    color: #ffffff;*/
+#jumbotron{
+  background-color: #3fb0ac;
 }
 
-#container {
-  padding: 30px 50px;
+#header{
+  color: #dddfd4;
+}
+
+#sub-header{
+  color: #dddfd4;
+}
+
+#body{
+  background-color: #dddfd4;
+  color: #173e43;
+}
+
+#setP1Name{
+  padding: 10px 10px;
+  background-color: #dddfd4;
+}
+
+#text{
+  font-size: 12pt;
+}
+
+#p1Name {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #848484;
+  outline:0;
+  height:25px;
+  width: 275px;
+}
+
+.submit {
+    border: 1px solid #3fb0ac;
+    border-radius: 18px;
+    background: #3fb0ac;
+    color: #dddfd4;
+    -moz-border-radius: 5px;
+    display:inline-block;
+    width: 10em;
+    height: 2em;
+    -webkit-font-smoothing: antialiased;
+}
+
+.submit {
+    border: 1px solid #3fb0ac;
+    border-radius: 18px;
+    background: #3fb0ac;
+    color: #dddfd4;
+    -moz-border-radius: 5px;
+    display:inline-block;
+    width: 10em;
+    height: 2em;
+    -webkit-font-smoothing: antialiased;
+}
+
+#p1Weapon{
+    margin-left: 20px;
 }

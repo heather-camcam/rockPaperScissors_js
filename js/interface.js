@@ -8,7 +8,7 @@ $(document).ready(function() {
     event.preventDefault();
     var name = $('#p1Name').val();
     game.setP1Name(name);
-    $('#Name').text("p1: " + game.p1Name);
+    $('#Name').text(game.p1Name + " vs. THE COMPUTER");
   });
 
   $('#selectWeapon').submit(function(event){

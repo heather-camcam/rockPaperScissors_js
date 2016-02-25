@@ -3,101 +3,53 @@
 
   <head>
     <title>Rock Paper Scissors</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="src/Game.js"></script>
     <script src="js/interface.js"></script>
     <link rel="stylesheet" type="text/css" href="public/home.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
-    integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   </head>
 
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="buttom" class="navbar-toggle" data-toggle="collapse"
-          data-target='#navbar-collapse'>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-
-          <a href="" class="navbar-brand">Rock Paper Scissors</a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-
-          <ul class="nav navbar-nav">
-            <li><a href="#play">Play</a>
-            <li><a href="#rules">Rules</a>
-            <li><a href="#contact">Contact</a>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
+  <body id="body">
     <div class="jumbotron text-center" id="jumbotron">
-      <h1>ROCK PAPER SCISSORS</h1>
-        <p>you decide...</p>
+      <h1 id="header">ROCK PAPER SCISSORS</h1>
+        <p id="sub-header">you decide...</p>
     </div>
 
-    <div id="container">
-      <section>
-        <div class="page-header" id="play">
-          <form id="setP1Name">
-            Name:<br>
-            <input type="text" id="p1Name"></input>
-            <input type="submit" value="Submit"></input>
-          </form>
-          <br>
-            <h3> <span id="Name"></span> </h3>
-          <br>
-          <form id="selectWeapon">
-            Select weapon:<br>
-            <input type="radio" name="weapon" id="p1Weapon" value="rock">Rock<br></input>
-            <input type="radio" name="weapon" id="p1Weapon" value="paper">Paper<br></input>
-            <input type="radio" name="weapon" id="p1Weapon" value="scissors">Scissors<br></input>
-            <input type="submit" value="Submit"></input>
-          </form>
-          <br>
-          <button type="button" id="play">Play now</button>
-          <br>
-          <br>
-          <span id="p1WeaponChoice"></span><br>
-          <span id="computerChoice"></span><br>
-          <span id="playGame"></span>
-        </div>
-
-        <div class="row text-center">
-          <div class="col-lg-4">
-            <p>A</p>
-          </div>
-          <div class="col-lg-4">
-            <p>B</p>
-          </div>
-          <div class="col-lg-4">
-            <p>C</p>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <div class="text-center">
+    <!-- <div class="text-center" id="rules">
       <h4>RULES:</h4>
       <p>
         Enter your name.<br>
         Select your weapon of choice.<br>
         Take on the computer!<br>
       </p>
-    </div>
+    </div> -->
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
-    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <form class="text-center" id="setP1Name">
+      <p id="text">Sign in to play:</p>
+      <input type="text" id="p1Name" class="text-center" placeholder="name"></input><br><br>
+      <input type="submit" value="Submit name" class="submit"></input>
+    </form>
+    <br>
 
+    <p class="text-center" id="text"> <span id="Name"></span> </p>
+    <br>
+
+    <form id="selectWeapon" class="text-center">
+      <p id="text">Select weapon:</p>
+      <input type="radio" name="weapon" id="p1Weapon" value="rock">Rock</input>
+      <input type="radio" name="weapon" id="p1Weapon" value="paper">Paper</input>
+      <input type="radio" name="weapon" id="p1Weapon" value="scissors">Scissors<br></input>
+      <input type="submit" value="Confirm weapon" class="submit"></input>
+    </form>
+    <br>
+
+    <p class="text-center" id="text"><span id="p1WeaponChoice"></span><br><span id="computerChoice"></span><br><p>
+
+    <p class="text-center"><button type="button" id="play" class="submit">Fight!</button><p>
+    <p class="text-center" id="text"><span id="playGame"></span></p>
   </body>
 
 </html>
