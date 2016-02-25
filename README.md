@@ -8,7 +8,7 @@ The task is to provide a Rock, Paper, Scissors game that can be played on the we
 Technologies used:
 
 * Testing - Jasmine
-* Back-end - Javascript
+* Back-end - JavaScript
 * Front-end - HTML, CSS, jQuery
 
 To download and use:
