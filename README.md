@@ -10,7 +10,6 @@ Technologies used:
 * Testing - Jasmine
 * Back-end - Javascript
 * Front-end - HTML, CSS, jQuery
-* 
 
 To download and use:
 
