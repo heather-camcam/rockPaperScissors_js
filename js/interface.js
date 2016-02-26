@@ -38,6 +38,8 @@ $(document).ready(function() {
     location.reload();
   });
 
-
+  $('#playAgain').click(function() {
+    location.reload();
+  });
 
 });
