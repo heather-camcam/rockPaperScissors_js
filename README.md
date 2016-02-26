@@ -1,8 +1,25 @@
 Rock Paper Scissors
 ===================
 
-JavaScript challenge - Feb 2016
--------------------------------
+Makers Academy Week 3 weekend challenge - redone using JavaScript and jQuery.
+
+The task is to provide a Rock, Paper, Scissors game that can be played on the web.
+
+Technologies used:
+
+* Testing - Jasmine
+* Back-end - JavaScript
+* Front-end - HTML, CSS, jQuery
+
+To download and use:
+
+````
+$ git clone https://github.com/heather-camcam/rockPaperScissors_js.git
+$ cd rockPaperScissors
+$ open rockPaperScissors.html
+````
+
+Functionality:
 
 ````
 As a user
