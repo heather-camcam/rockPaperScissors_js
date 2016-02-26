@@ -25,29 +25,29 @@ function Game() {
   Game.prototype.playGame = function(){
     if (this.p1Weapon === 'rock'){
       if (this.p1Weapon === this.computerWeapon){
-        return 'it\'s a draw!'}
+        return 'It\'s a draw!'}
       if (this.computerWeapon === 'scissors'){
-        return 'p1 wins!'}
+        return 'You win!'}
       else {
-        return 'computer wins!'}
+        return 'You lose!'}
     }
 
     if (this.p1Weapon === 'scissors'){
       if (this.p1Weapon === this.computerWeapon){
-        return 'it\'s a draw!'}
+        return 'It\'s a draw!'}
       if (this.computerWeapon === 'paper'){
-        return 'p1 wins!'}
+        return 'You win!'}
       else {
-        return 'computer wins!'}
+        return 'You lose!'}
     }
 
     if (this.p1Weapon === 'paper'){
       if (this.p1Weapon === this.computerWeapon){
-        return 'it\'s a draw!'}
+        return 'It\'s a draw!'}
       if (this.computerWeapon === 'rock'){
-        return 'p1 wins!'}
+        return 'You win!'}
       else {
-        return 'computer wins!'}
+        return 'You lose!'}
     }
 
   };
