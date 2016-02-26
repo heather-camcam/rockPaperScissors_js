@@ -21,7 +21,11 @@
 }
 
 #text{
-  font-size: 12pt;
+  font-size: 11pt;
+}
+
+#vsText{
+  font-size: 22pt;
 }
 
 #p1Name {
@@ -32,6 +36,11 @@
   outline:0;
   height:25px;
   width: 275px;
+  font-size: 11pt;
+}
+
+#playGame {
+  font-size: 22pt;
 }
 
 .submit {
@@ -60,4 +69,5 @@
 
 #p1Weapon{
     margin-left: 20px;
+    font-size: 11pt;
 }
